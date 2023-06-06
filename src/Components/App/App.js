@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 import { Route } from 'react-router-dom'
 import allQuotes from '../../apiCalls';
+import Header from '../Header/Header'
 
 class App extends React.Component {
   constructor() {
@@ -21,9 +22,10 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.allQuotes)
+
     return (
     <div className="App">
-        <h1> go one more </h1>
+      <Header />
     </div>
     )
   };
