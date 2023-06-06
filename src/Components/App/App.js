@@ -23,9 +23,7 @@ class App extends React.Component {
     console.log(this.state.allQuotes)
     return (
     <div className="App">
-      <header className="App-header">
         <h1> go one more </h1>
-      </header>
     </div>
     )
   };
