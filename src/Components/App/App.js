@@ -26,7 +26,6 @@ class App extends React.Component {
     return (
     <div className="App">
       <Header />
-        <h1> go one more </h1>
     </div>
     )
   };

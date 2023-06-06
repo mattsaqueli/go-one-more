@@ -1,0 +1,33 @@
+.header-container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border: 1px solid red;
+  width: 20em;
+  height: 20em;
+
+}
+
+.nav-section {
+  width: 60vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  color: white;
+  font-size: medium;
+  height: 3em;
+  width: 10em;
+  border: 1px solid white;
+  background: none;
+  border-radius: 1em;
+}
+
+button:hover {
+  background-color: darkslategray;
+}

@@ -1,16 +1,22 @@
 import React from 'react'
 import './Header.css'
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 
 const Header = () => {
+  const logo = <img src={require('../GO ONE MORE.png')} alt='Go One More logo'/>
 
   return (
-    <div>
-      <button>Home</button>
-      <button>Favorites</button>
-      <button>About Us</button>
-      <button>Resources</button>
-    </div>
+    <header className='header-container'>
+      <Link to='/'>
+        <img src={require('../GO ONE MORE.png')} alt='Go One More logo'/>
+      </Link>
+      <nav className='nav-section'>
+        <button>Home</button>
+        <button>Favorites</button>
+        <button>About Us</button>
+        <button>Resources</button>
+      </nav>
+    </header>
   )
 }
 
