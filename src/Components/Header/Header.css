@@ -16,6 +16,12 @@ img {
   align-items: center;
 }
 
+.button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   color: white;
   font-size: medium;
@@ -25,4 +31,53 @@ button {
 
 button:hover {
   background-color: black;
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 15vh;
+  }
+
+  img {
+    width: 10em;
+    height: 10em;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 5em;
+  }
+
+  .button-section {
+    gap: 1em;
+  }
+
+  button {
+    height: 2.5em;
+    width: 8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    height: 10vh;
+  }
+
+  img {
+    width: 10em;
+    height: 10em;
+  }
+
+  .nav-section {
+    flex-direction: column;
+    width: 80vw;
+    margin-top: 5em;
+  }
+
+  .button-section {
+    flex-direction: column;
+    gap: 1em;
+  }
 }

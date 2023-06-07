@@ -7,14 +7,20 @@ import Card from '../Card/Card'
 import Favorites from '../Favorites/Favorites'
 import AboutUs from '../AboutUs/AboutUs'
 import Resources from '../Resources/Resources'
+import ErrorHandling from '../ErrorHandling/ErrorHandling'
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
       favorites: [],
-      quote: null
+      quote: null,
+      error: ''
     }
+  }
+
+  componentDidMount() {
+    this.displayQuote();
   }
 
   displayQuote = () => {
@@ -34,6 +40,7 @@ class App extends React.Component {
     return (
     <main className="App">
       <Header />
+      <Switch>
       <Route 
         exact path ='/' 
         render={() => (
@@ -67,6 +74,14 @@ class App extends React.Component {
           <Resources /> 
           )}
       />
+
+      <Route 
+        path='*'
+        render={() => (
+          <ErrorHandling errorMessage={this.state.error}/> 
+          )}
+      />
+      </Switch>
 
     </main>
     )
