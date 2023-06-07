@@ -1,6 +1,7 @@
 import React from 'react'
 import './Card.css'
 import { Route } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Card = ({ quote, displayQuote, addFavorite }) => {
   return (
@@ -14,6 +15,12 @@ const Card = ({ quote, displayQuote, addFavorite }) => {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  quote: PropTypes.string,
+  displayQuote: PropTypes.func,
+  addFavorite: PropTypes.func
 }
 
 export default Card
