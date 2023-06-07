@@ -1,5 +1,5 @@
-.favorites-container {
-  width: 95vw;
+.about-container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,4 +7,8 @@
   color: white;
   font-size: large;
   font-weight: bolder;
+}
+
+p {
+  width: 70vw;
 }

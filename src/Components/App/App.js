@@ -5,6 +5,7 @@ import allQuotes from '../../apiCalls'
 import Header from '../Header/Header'
 import Card from '../Card/Card'
 import Favorites from '../Favorites/Favorites'
+import AboutUs from '../AboutUs/AboutUs'
 
 class App extends React.Component {
   constructor() {
@@ -49,6 +50,13 @@ class App extends React.Component {
           <Favorites 
             favorites={this.state.favorites} 
             /> 
+          )}
+      />
+
+      <Route 
+        exact path='/about'
+        render={() => (
+          <AboutUs /> 
           )}
       />
 
