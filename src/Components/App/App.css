@@ -12,3 +12,7 @@ button {
   background: none;
   border-radius: .5em;
 }
+
+button:hover {
+  cursor: pointer;
+}

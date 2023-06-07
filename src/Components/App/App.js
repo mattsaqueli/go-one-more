@@ -7,15 +7,20 @@ import Card from '../Card/Card'
 import Favorites from '../Favorites/Favorites'
 import AboutUs from '../AboutUs/AboutUs'
 import Resources from '../Resources/Resources'
-import ErrorHandling from '../ErrorHandling/Error'
+import ErrorHandling from '../ErrorHandling/ErrorHandling'
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
       favorites: [],
-      quote: null
+      quote: null,
+      error: ''
     }
+  }
+
+  componentDidMount() {
+    this.displayQuote();
   }
 
   displayQuote = () => {
@@ -73,7 +78,7 @@ class App extends React.Component {
       <Route 
         path='*'
         render={() => (
-          <ErrorHandling /> 
+          <ErrorHandling errorMessage={this.state.error}/> 
           )}
       />
       </Switch>
