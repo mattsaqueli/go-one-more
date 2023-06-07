@@ -8,7 +8,7 @@ const Card = ({ quote, displayQuote }) => {
       <div className='card-container'>
         <h1 className='quote-section'>{quote}</h1>
         <div className='button-section'>
-          <button className='fav-btn'>Favorite Quote</button>
+          <button className='fav-btn'>Add To Favorites</button>
           <button onClick={displayQuote}>New Quote</button>
         </div>
       </div>
