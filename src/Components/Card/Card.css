@@ -1,5 +1,20 @@
 .card-container {
-  border: 1px solid red;
-  width: 70vw;
-  
+  width: 50vw;
+  color: white;
+}
+
+.quote-card {
+  display: flex;
+  margin: 0;
+  padding: 15em 1em 5em 45em;
+  font-size: small;
+}
+
+.button-section {
+  display: flex;
+  align-content: space-evenly;
+}
+
+.fav-btn {
+  margin-right: 3em;
 }

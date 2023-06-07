@@ -15,7 +15,7 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount = () => {
+  displayQuote = () => {
     return allQuotes()
     .then(data => this.setState({ quote: data.quote }))
     .catch(error => {
@@ -29,8 +29,17 @@ class App extends React.Component {
     return (
     <main className="App">
       <Header />
-      <Card 
-      quote={this.state.quote}/>
+      <Route 
+        exact path ='/' 
+        render={() => (
+          <Card 
+            quote={this.state.quote} 
+            displayQuote={this.displayQuote}
+          />
+        )}
+      />
+
+
     </main>
     )
   };
