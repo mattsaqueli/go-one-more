@@ -7,6 +7,7 @@ import Card from '../Card/Card'
 import Favorites from '../Favorites/Favorites'
 import AboutUs from '../AboutUs/AboutUs'
 import Resources from '../Resources/Resources'
+import ErrorHandling from '../ErrorHandling/Error'
 
 class App extends React.Component {
   constructor() {
@@ -34,6 +35,7 @@ class App extends React.Component {
     return (
     <main className="App">
       <Header />
+      <Switch>
       <Route 
         exact path ='/' 
         render={() => (
@@ -67,6 +69,14 @@ class App extends React.Component {
           <Resources /> 
           )}
       />
+
+      <Route 
+        path='*'
+        render={() => (
+          <ErrorHandling /> 
+          )}
+      />
+      </Switch>
 
     </main>
     )
