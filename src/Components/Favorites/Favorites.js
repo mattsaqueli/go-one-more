@@ -7,7 +7,11 @@ const Favorites = ({ favorites }) => {
   ));
 
   return (
-  <div className='favorites-container'>{favoriteQuotes}</div>
+    
+  <div className='favorites-container'>
+    {!favorites.length && <h2>No quotes have been favorited...yet.</h2>}
+    {favoriteQuotes}
+    </div>
   )
 };
 
