@@ -1,5 +1,6 @@
 import React from 'react';
 import './Favorites.css'
+import PropTypes from 'prop-types'
 
 const Favorites = ({ favorites }) => {
   const favoriteQuotes = favorites.map((favorite, index) => (
@@ -13,6 +14,10 @@ const Favorites = ({ favorites }) => {
     {favoriteQuotes}
     </div>
   )
+}
+
+Favorites.propTypes = {
+  favorites: PropTypes.array
 };
 
 export default Favorites;
