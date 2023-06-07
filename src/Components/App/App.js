@@ -6,6 +6,7 @@ import Header from '../Header/Header'
 import Card from '../Card/Card'
 import Favorites from '../Favorites/Favorites'
 import AboutUs from '../AboutUs/AboutUs'
+import Resources from '../Resources/Resources'
 
 class App extends React.Component {
   constructor() {
@@ -57,6 +58,13 @@ class App extends React.Component {
         exact path='/about'
         render={() => (
           <AboutUs /> 
+          )}
+      />
+
+      <Route 
+        exact path='/resources'
+        render={() => (
+          <Resources /> 
           )}
       />
 
