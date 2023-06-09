@@ -1,27 +1,23 @@
-
 describe('App', () => {
   beforeEach(() => {
-    cy.fixture('quote.json').then(quotes => {
-      cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote', {
-        statusCode: 200,
-        body: quotes
-      }).as('getQuote')
-    })
+    cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote', {
+      statusCode: 200,
+      fixture: 'quote.json'
+    }).as('getQuote')
 
     cy.visit('http://localhost:3000/')
   })
 
   it('should have navigation links', () => {
-    cy.get('.nav-section').within(() => {
+    cy.get('.nav-section')
       cy.contains('Home').should('exist')
       cy.contains('Favorites').should('exist')
       cy.contains('About Us').should('exist')
       cy.contains('Resources').should('exist')
-    })
   })
 
   it('should navigate to the correct pages when the links are clicked', () => {
-    cy.get('.nav-section').within(() => {
+    cy.get('.nav-section')
       cy.contains('Home').click()
       cy.url().should('include', '/')
       
@@ -33,7 +29,6 @@ describe('App', () => {
       
       cy.contains('Resources').click()
       cy.url().should('include', '/resources')
-    })
   })
 
   it('should display a quote on the home page', () => {
