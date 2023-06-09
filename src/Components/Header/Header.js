@@ -3,7 +3,6 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-  const logo = <img src={require('../GO ONE MORE.png')} alt='Go One More logo'/>
 
   return (
     <header className='header-container'>
