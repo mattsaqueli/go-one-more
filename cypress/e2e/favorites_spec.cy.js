@@ -7,17 +7,14 @@ describe('Favorites', () => {
       }).as('getQuote')
     })
 
-    cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote').as('getQuote')
-
     cy.visit('http://localhost:3000/favorites')
   })
 
   it('should have navigation links', () => {
-    cy.get('.nav-section')
-      cy.contains('Home').should('exist')
-      cy.contains('Favorites').should('exist')
-      cy.contains('About Us').should('exist')
-      cy.contains('Resources').should('exist')
+    cy.get('.nav-section').should('contain', 'Home')
+    cy.get('.nav-section').should('contain', 'Favorites')
+    cy.get('.nav-section').should('contain', 'About Us')
+    cy.get('.nav-section').should('contain', 'Resources')
   })
 
   it('should display "No quotes have been favorited...yet." when favorites is empty', () => {
