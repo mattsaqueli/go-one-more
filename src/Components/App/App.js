@@ -32,7 +32,9 @@ class App extends React.Component {
   }
 
   addFavorite = (newFav) => {
-    if(!this.state.favorites.includes(newFav)) {this.setState({ favorites: [...this.state.favorites, newFav] })
+    if(!this.state.favorites.includes(newFav)) {
+      this.setState({ favorites: [...this.state.favorites, newFav] 
+      })
     }
   }
 
