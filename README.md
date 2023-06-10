@@ -1,70 +1,41 @@
-# Getting Started with Create React App
-test123
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Go One More
 
-## Available Scripts
+## Context:
+Welcome to Go One More, the platform dedicated to supporting veterans in their transition from the military and addressing mental health challenges. We understand that transitioning to civilian life can be a daunting process, and we are here to provide a helping hand and a source of inspiration to improve your mental well-being on this transformative journey.
 
-In the project directory, you can run:
+Go One More was created by a veteran who has personally experienced the unique struggles faced by those transitioning out of the military. We have designed our platform to specifically address the needs of veterans and provide them with the support they deserve. Our founder's firsthand experience allows us to offer valuable insights and a deep understanding of the challenges you may encounter during this phase of your life.
 
-### `npm start`
+## Installation Instructions:
+Fork this repo.
+Clone down the forked repo by running git clone [remote-address].
+Move into the directory.
+Run npm install.
+Run npm start.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployed Link:
+https://go-one-more.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Preview:
+![a gif of how the Go One More app works](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzRiYmRmNGVlZGVlZGIwZmJhZDJmNzAzNTRmNzg2ZmVlYmRjMjY3NCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/qNo7kC83GNsByssibz/giphy.gif)
 
-### `npm test`
+## Technologies:
+React | Router | Asynchronous JavaScript | End to end testing with Cypress
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributors:
+Mattheus Saqueli
+[GitHub](https://github.com/mattsaqueli)
+[LinkedIn](https://www.linkedin.com/in/mattheus-saqueli-409813250/)
 
-### `npm run build`
+## Learning Goals:
+- Strength skills with the technologies used
+- Work with an API to send and receive data
+- Solidify the code review process
+- Create a robust test suite that thoroughly tests all functionality of a client-side application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wins/Challenges:
+Win: On this project I began to feel much more comfortable building an app within React using Router. My code is clean, easy to follow along, and readable.
+Challenge: Im still working on my comfortability level within Cypress, although it has improved trendmendously, there are some things that I will spend more time on.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Addition:
+- Form input so users can add their own quotes.
+- More user interaction by rating a quote.
