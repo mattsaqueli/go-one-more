@@ -8,6 +8,7 @@ describe('Favorites', () => {
     })
 
     cy.visit('http://localhost:3000/favorites')
+    cy.wait('@getQuote')
   })
 
   it('should have navigation links', () => {
