@@ -3,7 +3,7 @@ describe('App', () => {
     cy.intercept('GET', 'https://api.themotivate365.com/stoic-quote', {
       statusCode: 200,
       fixture: 'quote.json'
-    }).as('getQuote')
+    })
 
     cy.visit('http://localhost:3000/')
   })
@@ -42,5 +42,4 @@ describe('App', () => {
     cy.get('.favorites-container').should('contain', 'True will is quiet humility, resilience, and flexibility; the other kind of will is weakness disguised by bluster and ambition.')
   })
 })
-
 
